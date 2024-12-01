@@ -1,17 +1,58 @@
-.container {
-  max-width: 1000px;
-  margin: 30px auto;
-
-}
-
-.filters {
+section.filters {
   background-color: white;
   height: 70px;
   width: 100%;
   border: 1px solid #dddddd;
   border-radius: 4px;
   position: relative;
-  display: flex;
+}
+
+.locations {
+  height: 100%;
+  width: 25%;
+  border-right: 1px solid #dddddd;
+  display: inline-block;
+  padding-left: 5%;
+}
+.locations .text {
+  position: absolute;
+  top: 50%; /* center vertically */
+  transform: translate(0, -50%); /* center vertically */
+}
+
+.locations h3 {
+  font-weight: 600;
+  margin: 0;
+}
+
+.locations h4 {
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+}
+
+.amenities {
+  height: 100%;
+  width: 25%;
+  display: inline-block;
+  padding-left: 5%;
+}
+
+.amenities .text {
+  position: absolute;
+  top: 50%; /* center vertically */
+  transform: translate(0, -50%); /* center vertically */
+}
+
+.amenities h3 {
+  font-weight: 600;
+  margin: 0;
+}
+
+.amenities h4 {
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
 }
 
 .filters button {
@@ -24,38 +65,11 @@
   border-radius: 4px;
   position: absolute;
   right: 30px;
-  top: 50%;
-  transform: translate(0, -50%);
-
+  top: 50%; /* center vertically */
+  transform: translate(0, -50%); /* center vertically */
 }
 
 .filters button:hover {
+  /* change opacity to 90% when the mouse is on the button; */
   opacity: 90%;
-}
-
-.filters div {
-  width: 25%;
-  height: 100%;
-  flex-flow: wrap column;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-
-}
-
-.locations {
-  border-right: #DDDDDD solid 1px;
-
-}
-
-.filters h3 {
-  font-weight: 600;
-  margin: 0;
-
-}
-
-.filters h4 {
-  font-weight: 400;
-  font-size: 14px;
-  margin: 0;
 }

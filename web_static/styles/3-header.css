@@ -2,10 +2,17 @@ header {
   background-color: white;
   height: 70px;
   width: 100%;
-  border-bottom: 1px solid #CCCCCC;
-  align-content: center;
+  border-bottom: 1px solid #cccccc;
+  position: relative;
 }
 
-.logo {
-  margin-left: 20px;
+.hlogo {
+  background-image: url(../images/logo.png);
+  background-size: 100% 100%;
+  height: 60px;
+  width: 142px;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translate(0, -50%);
 }

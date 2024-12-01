@@ -2,10 +2,21 @@ footer {
   background-color: white;
   height: 60px;
   width: 100%;
-  border-top: 1px solid #CCCCCC;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
+  border-top: 1px solid #cccccc;
+  text-align: center;
+  position: relative;
   bottom: 0;
+  left: 0;
+}
+
+footer div {
+  position: relative;
+  height: 60px;
+  width: 100%;
+}
+
+footer div span {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
